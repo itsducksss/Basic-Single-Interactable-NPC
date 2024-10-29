@@ -1,4 +1,4 @@
-# Basic Single Interactable NPC Dialouge Tutorial
+# Basic Single Interactable NPC Dialouge Tutorial FIXXXXXXXXXXX SCRIPT NO WORKKKK FOR MOVE
 Description
 
 This is a Unity tutorial for an interactable NPC, and how to create a basic single lined dialouge system.
