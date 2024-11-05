@@ -78,7 +78,15 @@ We will then double click the script added, and that should load up Microsoft Vi
   Before we load the scene and press play, we add the Rigidbody component. This will be used within the script to move the player in a 3d axis.
 
 https://github.com/user-attachments/assets/b6b95205-8e89-4cde-bfd1-039488a3523e
+
   This is what should happen when playing the scene in Unity. To fix this problem, we will edit the Rigidbody component we added onto the player.
+  ![image](https://github.com/user-attachments/assets/c0f04f74-cba7-4090-8aa7-07c03b27fbac)
+  This means that the rotation is frozen of the y and z axis. This allows for the capsule to move without the object move around without problems for now and later on when adjusting the script. The main reason we do this is to avoid the problems with the mesh's (objects in this case capsule's) collider. This is as when you move if the collider moves it can affect the character moves, which can affect how the character jumps and or interacts with other objects within the scene. This just helps to avoid any complications which may occur further in the project.
+  
+  ![image](https://github.com/user-attachments/assets/efdc8604-66a6-4f14-828b-f51d8760df52)
+  T
+
+
 
 
 To customise the results of the script you can adjust the number of the float in the script higher to increase the movement speed and lower to decrease the movement speed.
