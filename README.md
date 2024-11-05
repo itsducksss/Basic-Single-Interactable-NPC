@@ -75,6 +75,12 @@ We will then double click the script added, and that should load up Microsoft Vi
 - new just means new
 - Vector3 refres to the position using all 3 axis x, y, z which can be represented on a 3d space.
 
+  Before we load the scene and press play, we add the Rigidbody component. This will be used within the script to move the player in a 3d axis.
+
+  ![image](https://github.com/user-attachments/assets/7dc221e8-3809-466a-966e-62308be05762)
+  This is what should happen when playing the scene in Unity. To fix this problem, we will edit the Rigidbody component we added onto the player.
+
+
 To customise the results of the script you can adjust the number of the float in the script higher to increase the movement speed and lower to decrease the movement speed.
 
 # ADD IN RESULTS OF SCRIPT and more detail pls.
