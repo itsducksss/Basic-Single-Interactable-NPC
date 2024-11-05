@@ -1,4 +1,4 @@
-# Basic Single Interactable NPC Dialouge Tutorial FIXXXXXXXXXXX SCRIPT NO WORKKKK FOR MOVE
+# Basic Single Interactable NPC Dialouge Tutorial
 Description
 
 This is a Unity tutorial for an interactable NPC, and how to create a basic single lined dialouge system.
@@ -75,7 +75,9 @@ We will then double click the script added, and that should load up Microsoft Vi
 - new just means new
 - Vector3 refers to the position using all 3 axis x, y, z which can be represented on a 3d space.
 
-  Before we load the scene and press play, we add the Rigidbody component. This will be used within the script to move the player in a 3d axis.
+  ![image](https://github.com/user-attachments/assets/0eadee11-1914-44d2-8ca0-683320df5707)
+
+Before we load the scene and press play, we add the Rigidbody component. This will be used within the script to move the player in a 3d axis.
 
 https://github.com/user-attachments/assets/b6b95205-8e89-4cde-bfd1-039488a3523e
 
@@ -87,26 +89,13 @@ The Rigidbody also allows the object to utilise gravity within Unity seen in the
     
   ![image](https://github.com/user-attachments/assets/c0f04f74-cba7-4090-8aa7-07c03b27fbac)
   
-  This means that the rotation is frozen of the y and z axis. This allows for the capsule to move without the object move around without problems for now and later on when adjusting the script. The main reason we do this is to avoid the problems with the mesh's (objects in this case capsule's) collider. 
+This means that the rotation is frozen of the y and z axis. This allows for the capsule to move without the object move around without problems for now and later on when adjusting the script. The main reason we do this is to avoid the problems with the mesh's (objects in this case capsule's) collider. 
   
   ![image](https://github.com/user-attachments/assets/efdc8604-66a6-4f14-828b-f51d8760df52)
-  This is as when you move if the collider moves it can affect the character moves, which can affect how the character jumps and or interacts with other objects within the scene. This just helps to avoid any complications which may occur further in the project. This problem is shown in the image above (image shows the capsule collider), and once you fall/ collpase onto the side it is quite hard to get into the proper position for the other mechanics to work, if it is position orientated. One example of this is if there is an empty object onto the bottom of the playable character that detects the ground to jump. If the player is on its side, the empty object is unable to detect the "ground" and causes the player unable to jump anymore and the player will have a hard time to get back onto its original postion. By freezing the player rotation, it means that the player is unable to fall over and mess with mechanics of the player. 
+This is as when you move if the collider moves it can affect the character moves, which can affect how the character jumps and or interacts with other objects within the scene. This just helps to avoid any complications which may occur further in the project. This problem is shown in the image above (image shows the capsule collider), and once you fall/ collpase onto the side it is quite hard to get into the proper position for the other mechanics to work, if it is position orientated. One example of this is if there is an empty object onto the bottom of the playable character that detects the ground to jump. If the player is on its side, the empty object is unable to detect the "ground" and causes the player unable to jump anymore and the player will have a hard time to get back onto its original postion. By freezing the player rotation, it means that the player is unable to fall over and mess with mechanics of the player. 
 
 https://github.com/user-attachments/assets/04b687c3-36b6-4f0b-b9c9-e8204cef3113
 
 This video shows what happens when you freeze the rotation on the y and z axis on the Rigidbody component.
 
-
-
-
-
-
-
-
-To customise the results of the script you can adjust the number of the float in the script higher to increase the movement speed and lower to decrease the movement speed.
-
-# ADD IN RESULTS OF SCRIPT and more detail pls.
-
-
-
-
+To customise the results of the script you can adjust the number of the float in the script higher to increase the movement speed and lower to decrease the movement speed, as well as change the mass within the Rigidbody component to make the character fall and or jump faster, as well as act more realistically when simulating/ building the game.
