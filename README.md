@@ -61,10 +61,11 @@ We will then double click the script added, and that should load up Microsoft Vi
 - start means that it is enabled just before any of the Update methods are called the first time, when the Monobehaviour is enabled.
 - update means a function that gets called every frame if the MonoBehaviour is enabled.
 
-![image](https://github.com/user-attachments/assets/03eb33ae-3a64-45dd-a899-3c9a8c526866)
+![image](https://github.com/user-attachments/assets/7f8c8028-9eee-46fd-9ad0-17ef91b3166c)
 - Rigidbody refers to a component you can add to a gameObject that allows for a physics-based way to control the movement and position of a GameObject.
 - rb is what it will be called within the script. this means that when we type in rb that the Rigidbody will be referenced.
 - [SerializedField] helps to make the private variables accessible within the Unity editor without making them public, as well as helps to make serialize any private variable.
+- GetComponent means that when this action or statement is refered to that unity will detect this component from the object that the script is applied onto and use it to complete that certain action. In this case it means that when rb is mentioned that at the start of the scene that unity will get that component, and use it in the void update statement to move using the Rigidbody component on the capsule/ player.
 - float refers to a numerical value that can be assigned (whole or decimal).
 - MoveSpeed what the float (previous point) will be refered to within the code. This means that when y = x * MoveSpeed, that y is equal to the value of x multiplied by the MoveSpeed/ float which is 10 in the script.
 - horInput refers to the total value calculated of the Input by the user on the horizontal axis multiplied by the MoveSpeed.
