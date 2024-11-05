@@ -78,6 +78,9 @@ We will then double click the script added, and that should load up Microsoft Vi
   Before we load the scene and press play, we add the Rigidbody component. This will be used within the script to move the player in a 3d axis.
 
   ![image](https://github.com/user-attachments/assets/7dc221e8-3809-466a-966e-62308be05762)
+
+  ![video](https://github.com/user-attachments/assets/da6c97da-2230-43fe-912d-ac9aa934d667)
+
   This is what should happen when playing the scene in Unity. To fix this problem, we will edit the Rigidbody component we added onto the player.
 
 
