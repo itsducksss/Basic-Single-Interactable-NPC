@@ -73,14 +73,20 @@ We will then double click the script added, and that should load up Microsoft Vi
 - GetAxiRaw("-") refers to the axis (Horizonal or Vertical) which uses the world's x and z axis using the Left and Right, and a and d keys.
 - rb.velocity, it refers the velocity vector of the rigidbody.  it represents the rate of change of the rigid body per frame.
 - new just means new
-- Vector3 refres to the position using all 3 axis x, y, z which can be represented on a 3d space.
+- Vector3 refers to the position using all 3 axis x, y, z which can be represented on a 3d space.
 
-  Before we load the scene and press play, we add the Rigidbody component. This will be used within the script to move the player in a 3d axis. This also allows the object to utilise gravity within Unity.
+  Before we load the scene and press play, we add the Rigidbody component. This will be used within the script to move the player in a 3d axis.
 
 https://github.com/user-attachments/assets/b6b95205-8e89-4cde-bfd1-039488a3523e
 
-  This is what should happen when playing the scene in Unity. To fix this problem, we will edit the Rigidbody component we added onto the player.
+This is what should happen when playing the scene in Unity. To fix this problem, we will edit the Rigidbody component we added onto the player.
+
+https://github.com/user-attachments/assets/00158657-6cf7-41c2-bfad-ea62fde3d77d
+
+The Rigidbody also allows the object to utilise gravity within Unity seen in the video above, as the object falls.
+    
   ![image](https://github.com/user-attachments/assets/c0f04f74-cba7-4090-8aa7-07c03b27fbac)
+  
   This means that the rotation is frozen of the y and z axis. This allows for the capsule to move without the object move around without problems for now and later on when adjusting the script. The main reason we do this is to avoid the problems with the mesh's (objects in this case capsule's) collider. 
   
   ![image](https://github.com/user-attachments/assets/efdc8604-66a6-4f14-828b-f51d8760df52)
@@ -89,6 +95,8 @@ https://github.com/user-attachments/assets/b6b95205-8e89-4cde-bfd1-039488a3523e
 https://github.com/user-attachments/assets/04b687c3-36b6-4f0b-b9c9-e8204cef3113
 
 This video shows what happens when you freeze the rotation on the y and z axis on the Rigidbody component.
+
+
 
 
 
