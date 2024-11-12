@@ -15,7 +15,7 @@ You will also need to know how to create an empty project, add primitive objects
 https://www.youtube.com/watch?v=eQpWPfP1T6g
 
 # Primary Objectives
-This tutorial aims to create a simple interactable NPC, which means that if an specific input (which is the "F" key for this tutorial) occurs within a set distance from the NPC, another specified action will occur. The action for this tutorial is a simple "Hi" popup which will be createsd using Unity's UI system.
+This tutorial aims to create a simple interactable NPC, which means that if an specific input (which is the "F" key for this tutorial) occurs within a set distance from the NPC, another specified action will occur. The action for this tutorial is a simple "Hi" popup which will be created using Unity's UI system.
 
 # Preview
 
