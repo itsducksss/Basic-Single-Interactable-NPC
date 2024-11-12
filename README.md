@@ -55,6 +55,7 @@ I will create a new [material](https://docs.unity3d.com/ScriptReference/Material
 
 This can be done, by dragging and dropping the material into the sphere's Inspector Window. We will the drag the Player Detect (sphere) into the NPC so that they are connected. The NPC capsule will be the parent, with the sphere will be the child of the NPC.
 ![image](https://github.com/user-attachments/assets/fc3ba100-f3ab-4649-9d6e-cb31967e3968)
+
 We will then create a script called NPCSystem onto the Player Detect. For this tutorial only the Player Detect will have a script and not the NPC itself.
 
 ![image](https://github.com/user-attachments/assets/c7d9d4b2-736c-4751-8d27-7268768a1566)
@@ -85,6 +86,7 @@ We will then create a script called NPCSystem onto the Player Detect. For this t
 - {} is what is used to identify the start and end of a statement block.
 
 ![image](https://github.com/user-attachments/assets/e92ae03f-d562-43da-aae5-bebaa06c0a58)
+
 Before we play the scene, we make sure that the Player detect sphere has a sphere collider. We then edit the collider so that the collider is a trigger that means that it has the abilities to trigger another action to occur. We also look to see if the player capsule has the tag of "Player". If it does not have the tag then the interaction will not trigger, which in this case means that no dialouge will pop-up.
 
 
