@@ -49,7 +49,7 @@ To make the sphere and the NPC to have the same position, we can copy and paste 
 
 https://github.com/user-attachments/assets/9c5c8842-2bf5-4687-8bdd-ea19fe481e35
 
-I will create a new material (semi-transparent), by adjusting the emission (tick the emission box within the Inspector Window of the new material) of the material so that the NPC can still be seen with it covering the NPC capsule. I will then apply a material onto the sphere to make it easier to visually understand where the boundaries for the player can interact with the NPC. 
+I will create a new [material](https://docs.unity3d.com/ScriptReference/Material.html) (semi-transparent), by adjusting the emission (tick the emission box within the Inspector Window of the new material) of the material so that the NPC can still be seen with it covering the NPC capsule. I will then apply a material onto the sphere to make it easier to visually understand where the boundaries for the player can interact with the NPC. 
 
 ![image](https://github.com/user-attachments/assets/8e39e6a6-9fee-4f38-bcd2-edcb1767c2aa)![image](https://github.com/user-attachments/assets/2f735892-7083-471d-8250-38f7df3dbadc)
 
@@ -60,27 +60,29 @@ We will then create a script called NPCSystem onto the Player Detect. For this t
 ![image](https://github.com/user-attachments/assets/c7d9d4b2-736c-4751-8d27-7268768a1566)
 -  using [insert system] means that it can refer to that specific system and its properties when coding using references made to a specific system
 - : means this class inherits functions and variables from another class
-- Monobehaviour refers Unity supplied class that attaches directly to GameObjects, which we base a new class onto.
+- [Monobehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) refers Unity supplied class that attaches directly to GameObjects, which we base a new class onto.
 - bool refers to a value that is either true or false.
 - player_detection refers to if the tag "Player" is detected by the sphere using the OnTriggerEnter from the Rigidbody, then player_detection is true and the "f" key is pressed then the message will be printed.
 - && in the script means hat if the player_detection and the input of the "f" key is pressed then the if statement can occur.
 - false means that it is not true, and the statement is not correct.
 - true means that the statement is correct.
-- ; is used at the end of most lines/ statements FIXX DIS
+- ; is used at the end of most lines/ statements. without this an error will occur.
 - void refers to a function can return normally without the need of a value.
-- update means a function that gets called every frame if the MonoBehaviour is enabled.
+- [update](https://docs.unity3d.com/ScriptReference/PlayerLoop.Update.html) means a function that gets called every frame if the MonoBehaviour is enabled.
 - [Input](https://docs.unity3d.com/ScriptReference/Input.html) means to put an action into unity.
-- GetKeyDown means that an action will occur when a key is pressed down
-- KeyCode.F this refers to a specific key in this case the F key. If it was KeyCode.E it would refer to the E Key.
+- [GetKeyDown](https://docs.unity3d.com/ScriptReference/Input.GetKeyDown.html) means that an action will occur when a key is pressed down
+- [KeyCode](https://docs.unity3d.com/ScriptReference/KeyCode.html) Keycode.F this refers to a specific key in this case the F key. If it was KeyCode.E it would refer to the E Key.
 - print("-") is an action in which the whatever is within the ("-") will be shown in the console.
-- private
-- if() is an if statement which is used to help show if a block of code can be exectuted if specified conditions is true. in this case if the player_detection and input is true then the rpint "-"
-- [Collider](https://docs.unity3d.com/ScriptReference/Collider.html) other
-- other.name
-- == this means that the equation/ value that is used to perform this action is true/ equal
+- [private](https://discussions.unity.com/t/public-or-private/9977) allows you to call it yourself from outside the class/ script. Private means only members of this class (and by extension, its children) have access to it.
+- [public](https://discussions.unity.com/t/public-or-private/9977) means that anything anywhere has direct access to whatever it is.
+- if() is an if statement which is used to help show if a block of code can be exectuted if specified conditions is true. in this case if the player_detection and input is true then the print "-"
+- [Collider](https://docs.unity3d.com/ScriptReference/Collider.html) other in this script means that it does not matter if the collider is specified unlike if the script referenced a capsule collider, in which case would mean that the event would only trigger of it was the capsule collider.
+- other.name in this case means that if the tag is anything else but player then player_detection will be false.
+- [==](https://discussions.unity.com/t/operators-and/527586/3) this means that the equation/ value that is used to perform this action is true/ equal
 - "Player" is the tag that we used to help identify which game object is the player.
-- OnTriggerExit
-- {} is what is used to
+- [OnTriggerEnter](https://docs.unity3d.com/ScriptReference/MonoBehaviour.OnTriggerEnter.html) this means that when the collider enters another collider (with the collider's isTrigger box ticked then player_deteaction is true)
+- [OnTriggerExit](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html) in the script means that if the tag is not the "Player", that the player_detection is false.
+- {} is what is used to identify the start and end of a statement block.
 
 ![image](https://github.com/user-attachments/assets/e92ae03f-d562-43da-aae5-bebaa06c0a58)
 Before we play the scene, we make sure that the Player detect sphere has a sphere collider. We then edit the collider so that the collider is a trigger that means that it has the abilities to trigger another action to occur. We also look to see if the player capsule has the tag of "Player". If it does not have the tag then the interaction will not trigger, which in this case means that no dialouge will pop-up.
