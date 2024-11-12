@@ -53,6 +53,7 @@ I will create a new [material](https://docs.unity3d.com/ScriptReference/Material
 ![image](https://github.com/user-attachments/assets/8e39e6a6-9fee-4f38-bcd2-edcb1767c2aa)![image](https://github.com/user-attachments/assets/2f735892-7083-471d-8250-38f7df3dbadc)
 
 This can be done, by dragging and dropping the material into the sphere's Inspector Window. We will the drag the Player Detect (sphere) into the NPC so that they are connected. The NPC capsule will be the parent, with the sphere will be the child of the NPC.
+
 ![image](https://github.com/user-attachments/assets/fc3ba100-f3ab-4649-9d6e-cb31967e3968)
 
 We will then create a script called NPCSystem onto the Player Detect. For this tutorial only the Player Detect will have a script and not the NPC itself.
@@ -93,10 +94,12 @@ https://github.com/user-attachments/assets/de4cbb52-bfe5-4d67-bb42-61330bdd5298
 
 
 When playing the scene this should be the result. The console should have whatever message you typed in the print("-") in this case - would shouw in the console.
+
 ![image](https://github.com/user-attachments/assets/bf64604b-1595-46c5-8fc2-3a6fc3068223)![image](https://github.com/user-attachments/assets/b788d664-ec48-4a2a-8418-8404dcb90e5f)![image](https://github.com/user-attachments/assets/21838ef3-1cc9-4ced-8797-5f547476af80)
 
 
 After this we create/ add a canvas and image into the Unity scene. We then resize the image to the size of the dialouge panel you want. Adjust the colour of the image as wanted in this case gray for the tutorial, we then also adjust the size of the image in the scene to the desired size. In this case this is what it looks like in my Unity scene, but adjust to your own Unity scene.
+
 ![image](https://github.com/user-attachments/assets/9c6b5cb5-f2f1-4000-8286-36e5b9ac9c2f)![image](https://github.com/user-attachments/assets/4a109aea-bbfa-4b83-bc79-18562298a84a)
 
 Image above shows the image in the scene vs what the player sees.
