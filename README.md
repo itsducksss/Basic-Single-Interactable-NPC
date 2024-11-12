@@ -39,7 +39,7 @@ This tutorial will follow the layout stated above.
 
 ![image](https://github.com/user-attachments/assets/06f481b0-12c2-4442-9b3a-fdaeb90db614)
 
-Looking at the Unity scene, we will first create a sphere with the same [transforms](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Component-transform.html) of the NPC capsule this will mean that the NPC is within the centre of the sphere. The transform component is used to show where an object is (in this case the capsule) within the scene, and maintaining and or chaning its position. To maintain the position of the capsule, we do not have to add an input. To change the position of the capsule we can alter the values within the position boxes of the transform components. This will change where the capsule is within a specific axis. To make the sphere and the NPC to have the same position, we can copy and paste the transforms of the NPC onto the newly created sphere. 
+Looking at the Unity scene, we will first create a sphere with the same [transforms](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Component-transform.html) of the NPC capsule this will mean that the NPC is within the centre of the sphere. The [transform](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Component-transform.html) component is used to show where an object is (in this case the capsule) within the scene, and maintaining and or chaning its position. To maintain the position of the capsule, we do not have to add an input. To change the position of the capsule we can alter the values within the position boxes of the [transform](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Component-transform.html) components. This will change where the capsule is within a specific axis. To make the sphere and the NPC to have the same position, we can copy and paste the transforms of the NPC onto the newly created sphere. 
 ![image](https://github.com/user-attachments/assets/1eb0fbdf-b5c3-4daa-b80c-e7aa491fc2f3)![image](https://github.com/user-attachments/assets/e93cd4ba-4c63-483f-b6b7-3814ea6b998e)
 
 
@@ -49,7 +49,7 @@ To make the sphere and the NPC to have the same position, we can copy and paste 
 
 https://github.com/user-attachments/assets/9c5c8842-2bf5-4687-8bdd-ea19fe481e35
 
-I will create a new [material](https://docs.unity3d.com/ScriptReference/Material.html) (semi-transparent), by adjusting the emission (tick the emission box within the Inspector Window of the new material) of the material so that the NPC can still be seen with it covering the NPC capsule. I will then apply a material onto the sphere to make it easier to visually understand where the boundaries for the player can interact with the NPC. 
+I will create a new [material](https://docs.unity3d.com/ScriptReference/Material.html) (semi-transparent), by adjusting the emission (tick the emission box within the Inspector Window of the new material) of the [material](https://docs.unity3d.com/ScriptReference/Material.html) so that the NPC can still be seen with it covering the NPC capsule. I will then apply a [material](https://docs.unity3d.com/ScriptReference/Material.html) onto the sphere to make it easier to visually understand where the boundaries for the player can interact with the NPC. 
 
 ![image](https://github.com/user-attachments/assets/8e39e6a6-9fee-4f38-bcd2-edcb1767c2aa)![image](https://github.com/user-attachments/assets/2f735892-7083-471d-8250-38f7df3dbadc)
 
@@ -60,7 +60,7 @@ We will then create a script called NPCSystem onto the Player Detect. For this t
 ![image](https://github.com/user-attachments/assets/c7d9d4b2-736c-4751-8d27-7268768a1566)
 -  using [insert system] means that it can refer to that specific system and its properties when coding using references made to a specific system
 - : means this class inherits functions and variables from another class
-- [Monobehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) refers Unity supplied class that attaches directly to GameObjects, which we base a new class onto.
+- [Monobehaviour](https://docs.unity3d.com/ScriptReference/MonoBehaviour.html) refers Unity supplied class that attaches directly to [GameObjects](https://docs.unity3d.com/ScriptReference/GameObject.html), which we base a new class onto.
 - bool refers to a value that is either true or false.
 - player_detection refers to if the tag "Player" is detected by the sphere using the OnTriggerEnter from the Rigidbody, then player_detection is true and the "f" key is pressed then the message will be printed.
 - && in the script means hat if the player_detection and the input of the "f" key is pressed then the if statement can occur.
