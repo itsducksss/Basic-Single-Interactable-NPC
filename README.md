@@ -97,13 +97,14 @@ When playing the scene this should be the result. The console should have whatev
 
 
 After this we create/ add a canvas and image into the Unity scene. We then resize the image to the size of the dialouge panel you want. Adjust the colour of the image as wanted in this case gray for the tutorial, we then also adjust the size of the image in the scene to the desired size. In this case this is what it looks like in my Unity scene, but adjust to your own Unity scene.
-![image](https://github.com/user-attachments/assets/d9cf69d8-93e0-47fe-ae19-437d66a40616)![image](https://github.com/user-attachments/assets/4a109aea-bbfa-4b83-bc79-18562298a84a)
+![image](https://github.com/user-attachments/assets/9c6b5cb5-f2f1-4000-8286-36e5b9ac9c2f)![image](https://github.com/user-attachments/assets/4a109aea-bbfa-4b83-bc79-18562298a84a)
 
 Image above shows the image in the scene vs what the player sees.
 
 ![image](https://github.com/user-attachments/assets/86cfa10f-3687-4c30-8df8-0a1103815a08)![image](https://github.com/user-attachments/assets/49bef283-a3db-4acd-83d0-590e8e668d40)![image](https://github.com/user-attachments/assets/812e6ff6-2911-4c12-9cec-21961cfa8028)
 
 We then add a TextMeshPro. this will be a textbox, in which the dialouge will appear in. When this is added, if the Textmeshpro Essentials are not added, then the option to add them will appear seen above. Once added adjust the size of the text box to be within the image on the canvas. Adjust the size and colour of the text as wanted.
+
 ![image](https://github.com/user-attachments/assets/dc0e847d-0bcc-4e96-b3ed-f1b7c20e67f6)
 
 We then put the image and TextMeshPro as a child of an empty we rename as D_Template.
@@ -113,7 +114,7 @@ We then put the image and TextMeshPro as a child of an empty we rename as D_Temp
 - [Gameobject](https://docs.unity3d.com/ScriptReference/GameObject.html) base class for all objects in the Unity scene.
 - d_template refers to the iimage and TextMeshPro that we just made.
 - canva just refers to the Canvas UI.
-- [SetActive](https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html) means that active state ogf the agemobject is set to true.
+- [SetActive](https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html) means that active state ogf the Gagemobject is set to true.
 - NewDialouge refers to new bloack statement which will create the dialouge box and create the dialouge using the TextMeshPro.
 - GetChild(0) this means that it will get the first child of the gameObject stated.
 - canva.transform.GetChild(0).gameObject means that it will get the first child of the canva stated.
@@ -136,8 +137,7 @@ In the playermovement script we added in the lines 9, 20, 21, 28 - add this onto
 - DestroySpeed refers to how long the gameObject will stay within the scene until it is destroyed.
 - [Destroy](https://docs.unity3d.com/ScriptReference/Object.Destroy.html) this means deleting/ destroying something in thiscase it would be whatever the script is attached onto.
 
-
-![image](https://github.com/user-attachments/assets/ae30090f-dae6-4755-ab86-4b73502e1e75)
+![image](https://github.com/user-attachments/assets/7948f2fc-c063-4497-9aa4-2cbbc824a077)![image](https://github.com/user-attachments/assets/45c238cc-8fd4-47fc-afa4-5198e0459be6)
 
 Drag the D_Template which we made composing of the image and the TextMeshPro and drag it into project window. This will create a prefab of the D_Template which will instantiate when we press the "f" key. We can then delete the D_Template in the heirarchy. We then go into the Player Detect sphere and look into the Inspector Window and drag the D_Template prefab we just made into the d_template in the NPCSystem script. We the drag the canvas from the heirarchy into the NPCSystem script canva.
 
