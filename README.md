@@ -39,11 +39,11 @@ This tutorial will follow the layout stated above.
 
 ![image](https://github.com/user-attachments/assets/06f481b0-12c2-4442-9b3a-fdaeb90db614)
 
-Looking at the Unity scene, we will first create a sphere with the same transforms of the NPC capsule this will mean that the NPC is within the centre of the sphere. The transform component is used to show where an object is (in this case the capsule) within the scene, and maintaining and or chaning its position. To maintain the position of the capsule, we do not have to add an input. To change the position of the capsule we can alter the values within the position boxes of the transform components. This will change where the capsule is within a specific axis. To make the sphere and the NPC to have the same position, we can copy and paste the transforms of the NPC onto the newly created sphere.
+Looking at the Unity scene, we will first create a sphere with the same transforms of the NPC capsule this will mean that the NPC is within the centre of the sphere. The transform component is used to show where an object is (in this case the capsule) within the scene, and maintaining and or chaning its position. To maintain the position of the capsule, we do not have to add an input. To change the position of the capsule we can alter the values within the position boxes of the transform components. This will change where the capsule is within a specific axis. To make the sphere and the NPC to have the same position, we can copy and paste the transforms of the NPC onto the newly created sphere. 
 ![image](https://github.com/user-attachments/assets/1eb0fbdf-b5c3-4daa-b80c-e7aa491fc2f3)![image](https://github.com/user-attachments/assets/e93cd4ba-4c63-483f-b6b7-3814ea6b998e)
 
 
-To make the sphere and the NPC to have the same position, we can copy and paste the transforms of the NPC onto the newly created sphere. We then scale up the size of the sphere to the desired sized of the interactable area of the NPC to have. We will then rename the sphere as Player Detect, as this is will detect the player.
+To make the sphere and the NPC to have the same position, we can copy and paste the transforms of the NPC onto the newly created sphere. We then scale up the size of the sphere to the desired sized of the interactable area of the NPC to have. We will then rename the sphere as Player Detect, as this is will detect the player. 
 
 ![image](https://github.com/user-attachments/assets/19863ec6-153a-4425-a8ad-a78f9f6859a1)
 
@@ -62,19 +62,20 @@ We will then create a script called NPCSystem onto the Player Detect. For this t
 - : means this class inherits functions and variables from another class
 - Monobehaviour refers Unity supplied class that attaches directly to GameObjects, which we base a new class onto.
 - bool refers to a value that is either true or false.
-- player_detection refers to the
-- && means
-- false means
+- player_detection refers to if the tag "Player" is detected by the sphere using the OnTriggerEnter from the Rigidbody, then player_detection is true and the "f" key is pressed then the message will be printed.
+- && in the script means hat if the player_detection and the input of the "f" key is pressed then the if statement can occur.
+- false means that it is not true, and the statement is not correct.
+- true means that the statement is correct.
 - ; is used at the end of most lines/ statements FIXX DIS
 - void refers to a function can return normally without the need of a value.
 - update means a function that gets called every frame if the MonoBehaviour is enabled.
-- Input means
+- [Input](https://docs.unity3d.com/ScriptReference/Input.html) means to put an action into unity.
 - GetKeyDown means that an action will occur when a key is pressed down
 - KeyCode.F this refers to a specific key in this case the F key. If it was KeyCode.E it would refer to the E Key.
 - print("-") is an action in which the whatever is within the ("-") will be shown in the console.
 - private
-- if() is an if statement which is
-- Collider other
+- if() is an if statement which is used to help show if a block of code can be exectuted if specified conditions is true. in this case if the player_detection and input is true then the rpint "-"
+- [Collider](https://docs.unity3d.com/ScriptReference/Collider.html) other
 - other.name
 - == this means that the equation/ value that is used to perform this action is true/ equal
 - "Player" is the tag that we used to help identify which game object is the player.
@@ -82,7 +83,7 @@ We will then create a script called NPCSystem onto the Player Detect. For this t
 - {} is what is used to
 
 ![image](https://github.com/user-attachments/assets/e92ae03f-d562-43da-aae5-bebaa06c0a58)
-Before we play the scene, we make sure that the Player detect sphere has a sphere collider. We then edit the collider so that the collider is a trigger that means that it has the abilities to trigger another action to occur.
+Before we play the scene, we make sure that the Player detect sphere has a sphere collider. We then edit the collider so that the collider is a trigger that means that it has the abilities to trigger another action to occur. We also look to see if the player capsule has the tag of "Player". If it does not have the tag then the interaction will not trigger, which in this case means that no dialouge will pop-up.
 
 
 https://github.com/user-attachments/assets/de4cbb52-bfe5-4d67-bb42-61330bdd5298
