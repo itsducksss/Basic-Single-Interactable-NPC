@@ -152,4 +152,4 @@ https://github.com/user-attachments/assets/7234e240-b2e5-4a05-995a-09c40216ec29
 
 
 
-When you play the Unity Scene this is what should happen. The dialouge goes away after 5 seconds due to the DestroyGameobject script we added onto the D_Template prefab. 
+When you play the Unity Scene this is what should happen. The dialouge goes away after 5 seconds due to the DestroyGameobject script we added onto the D_Template prefab, the time it takes until it disappears can be edited in the Inspector Window in the D_Template (DestroyGameobject). 
