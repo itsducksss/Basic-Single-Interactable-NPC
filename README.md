@@ -142,7 +142,7 @@ In the playermovement script we added in the lines 9, 20, 21, 28 - add this onto
 
 ![image](https://github.com/user-attachments/assets/7948f2fc-c063-4497-9aa4-2cbbc824a077)![image](https://github.com/user-attachments/assets/45c238cc-8fd4-47fc-afa4-5198e0459be6)
 
-Drag the D_Template which we made composing of the image and the TextMeshPro and drag it into project window. This will create a prefab of the D_Template which will instantiate when we press the "f" key. We can then delete the D_Template in the heirarchy. We then go into the Player Detect sphere and look into the Inspector Window and drag the D_Template prefab we just made into the d_template in the NPCSystem script. We the drag the canvas from the heirarchy into the NPCSystem script canva.
+Before we make the D_Template, we will add the DestroyGameobject script and attach it onto the D_Template(the empty parent) this means that the Gameobjects that are the children to the D_Template empty will alos be deleted. Drag the D_Template which we made composing of the image, DestroyGameobject script, and the TextMeshPro and drag it into project window. This will create a prefab of the D_Template which will instantiate when we press the "f" key. We can then delete the D_Template in the heirarchy. We then go into the Player Detect sphere and look into the Inspector Window and drag the D_Template prefab we just made into the d_template in the NPCSystem script. We the drag the canvas from the heirarchy into the NPCSystem script canva.
 
 
 
