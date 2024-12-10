@@ -78,7 +78,7 @@ We will then create a script called NPCSystem onto the Player Detect. For this t
 - print("-") is an action in which the whatever is within the ("-") will be shown in the console.
 - [private](https://discussions.unity.com/t/public-or-private/9977) allows you to call it yourself from outside the class/ script. Private means only members of this class (and by extension, its children) have access to it.
 - [public](https://discussions.unity.com/t/public-or-private/9977) means that anything anywhere has direct access to whatever it is.
-- if() is an if statement which is used to help show if a block of code can be exectuted if specified conditions is true. in this case if the player_detection and input is true then the print "-"
+- [if()](https://imran-momin.medium.com/if-else-statements-unity-c-3ea7e8bc8eee) is an if statement which is used to help show if a block of code can be exectuted if specified conditions is true. in this case if the player_detection and input is true then the print "-"
 - [Collider](https://docs.unity3d.com/ScriptReference/Collider.html) other in this script means that it does not matter if the collider is specified unlike if the script referenced a capsule collider, in which case would mean that the event would only trigger of it was the capsule collider.
 - other.name in this case means that if the tag is anything else but player then player_detection will be false.
 - [==](https://discussions.unity.com/t/operators-and/527586/3) this means that the equation/ value that is used to perform this action is true/ equal
