@@ -140,6 +140,8 @@ In the playermovement script we added in the lines 9, 20, 21, 28 - add this onto
 - [static](https://docs.unity3d.com/Manual/StaticObjects.html)
 - !PlayerMovement.dialouge means that it refers to the PlayerMovement script and refers to the dialouge section of the NPCSystem script.
 
+This just means that the code can be referenced into the character movement script, and that it can work properly.
+
 ![image](https://github.com/user-attachments/assets/80d186d1-0910-44a0-a899-d435b49cefb6)
 
 - [Serialize Field](https://docs.unity3d.com/ScriptReference/SerializeField.html) helps to make the private variables accessible within the Unity editor without making them public, as well as helps to make serialize any private variable.
