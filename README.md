@@ -87,9 +87,11 @@ We will then create a script called NPCSystem onto the Player Detect. For this t
 - [OnTriggerExit](https://docs.unity3d.com/ScriptReference/Collider.OnTriggerExit.html) in the script means that if the tag is not the "Player", that the player_detection is false.
 - {} is what is used to identify the start and end of a statement block.
 
+This just means that if we collide with the sphere with this script (and the player has the "Player" tag) the collider will check if the object has the "Player" tag and if it does not the command will not occur even after pressing the "f" key. If the player presses the "f" key and is within the tigger collider of the sphere 
+
 ![image](https://github.com/user-attachments/assets/e92ae03f-d562-43da-aae5-bebaa06c0a58)
 
-Before we play the scene, we make sure that the Player detect sphere has a sphere collider. We then edit the collider so that the collider is a trigger that means that it has the abilities to trigger another action to occur. We also look to see if the player capsule has the tag of "Player". If it does not have the tag then the interaction will not trigger, which in this case means that no dialouge will pop-up.
+Before we play the scene, we make sure that the Player detect sphere has a sphere collider. We then edit the collider so that the collider is a trigger that means that it has the abilities to trigger another action to occur. We also look to see if the player capsule has the tag of "Player". If it does not have the "Player" tag then the interaction will not trigger, which in this case means that no dialouge will pop-up, but if it does the first if stement will happen and the text will print Haaii in the console.
 
 
 https://github.com/user-attachments/assets/de4cbb52-bfe5-4d67-bb42-61330bdd5298
@@ -117,7 +119,7 @@ We then put the image and TextMeshPro as a child of an empty we rename as D_Temp
 ![image](https://github.com/user-attachments/assets/75366cbf-e282-4d17-91db-f826d0578959)
 
 - [Gameobject](https://docs.unity3d.com/ScriptReference/GameObject.html) base class for all objects in the Unity scene.
-- d_template refers to the iimage and TextMeshPro that we just made.
+- d_template refers to the image and TextMeshPro that we just made.
 - canva just refers to the Canvas UI.
 - [SetActive](https://docs.unity3d.com/ScriptReference/GameObject.SetActive.html) means that active state ogf the Gagemobject is set to true.
 - NewDialouge refers to new bloack statement which will create the dialouge box and create the dialouge using the TextMeshPro.
@@ -126,9 +128,11 @@ We then put the image and TextMeshPro as a child of an empty we rename as D_Temp
 - [string](https://docs.unity3d.com/560/Documentation/ScriptReference/String.html) this refers ta sequence of characters.
 - text this refers to the part of the TextMeshPro that will be use to show dialouge.
 - template_clone refers to the d_template that is duplicated.
-- Instantiate](https://docs.unity3d.com/6000.0/Documentation/Manual/instantiating-prefabs.html) this allows us to create a copy (prefab) of an object into unity.
+- [Instantiate](https://docs.unity3d.com/6000.0/Documentation/Manual/instantiating-prefabs.html) this allows us to create a copy (prefab) of an object into unity.
 - Instantiate(d_template, canva.transform) this means that it will create the d_template and will spawn it in using the [transform](https://docs.unity3d.com/2022.3/Documentation/ScriptReference/Component-transform.html) of the canva.
 - template_clone.transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = text; means that from the instantiated d_template clone it will get the TextMeshPro component and will change the text part of the TextMeshPro which will allow us to show and change the dialouge.
+
+This just means that the D_Template prefab we made will instantiate when we press "f" and the text will appear using the TextMeshPro package. This also just means that the D_Template will appear in the correct area by using the canva.transform as a base.
 
 ![image](https://github.com/user-attachments/assets/d1684d09-280e-48df-b624-21aa653de47a)
 
@@ -142,9 +146,13 @@ In the playermovement script we added in the lines 9, 20, 21, 28 - add this onto
 - DestroySpeed refers to how long the gameObject will stay within the scene until it is destroyed.
 - [Destroy](https://docs.unity3d.com/ScriptReference/Object.Destroy.html) this means deleting/ destroying something in thiscase it would be whatever the script is attached onto.
 
+This just emans that whatever we attach this onto will destroy itself depending on the DestroySpeed value.
+
 ![image](https://github.com/user-attachments/assets/7948f2fc-c063-4497-9aa4-2cbbc824a077)![image](https://github.com/user-attachments/assets/45c238cc-8fd4-47fc-afa4-5198e0459be6)
 
 Before we make the D_Template, we will add the DestroyGameobject script and attach it onto the D_Template(the empty parent) this means that the Gameobjects that are the children to the D_Template empty will alos be deleted. Drag the D_Template which we made composing of the image, DestroyGameobject script, and the TextMeshPro and drag it into project window. This will create a prefab of the D_Template which will instantiate when we press the "f" key. We can then delete the D_Template in the heirarchy. We then go into the Player Detect sphere and look into the Inspector Window and drag the D_Template prefab we just made into the d_template in the NPCSystem script. We the drag the canvas from the heirarchy into the NPCSystem script canva.
+
+We then make sure that the D_Template in the scene is deleted as this will cover over the D_Template that will instantiate when we press the "f" key. By deleting this it just means that the textbox can be viewed properly with the text written onto it.
 
 
 
