@@ -5,6 +5,7 @@ This is a Unity tutorial for an interactable NPC, and how to create a basic sing
 
 # Prerequisites
 Code taken from : [Printing](https://www.youtube.com/watch?v=X-7A0WzSx5A) [Dialouge](https://www.youtube.com/watch?v=a9bhK-P7r-0)
+
 Before approaching this tutorial, you will need a current version of Unity and a code editor (such as Microsoft Visual Studio Community) installed and ready to use.
 
 This tutorial was created with Unity 2022.3 LTS and Microsoft Visual Studio Community 2022 versions. It should work with earlier or later versions. But you should check the release notes for other versions as the Editor controls or Scripting API functions may have changed. This is as the changes in the updates can cause errors to occur that may have been fixed or changed within different versions of the Unity and Visual Studio softwares.
