@@ -4,7 +4,7 @@ Description
 This is a Unity tutorial for an interactable NPC, and how to create a basic single lined dialouge system.
 
 # Prerequisites
-Code taken from : [Printing](https://www.youtube.com/watch?v=X-7A0WzSx5A) [Dialouge](https://www.youtube.com/watch?v=a9bhK-P7r-0)
+Code taken from : [Print](https://www.youtube.com/watch?v=X-7A0WzSx5A) [Dialouge](https://www.youtube.com/watch?v=a9bhK-P7r-0)
 
 Before approaching this tutorial, you will need a current version of Unity and a code editor (such as Microsoft Visual Studio Community) installed and ready to use.
 
