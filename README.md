@@ -123,7 +123,7 @@ We then put the image and TextMeshPro as a child of an empty we rename as D_Temp
 - NewDialouge refers to new bloack statement which will create the dialouge box and create the dialouge using the TextMeshPro.
 - GetChild(0) this means that it will get the first child of the gameObject stated.
 - canva.transform.GetChild(0).gameObject means that it will get the first child of the canva stated.
-- [string](https://docs.unity3d.com/560/Documentation/ScriptReference/String.html)
+- [string](https://docs.unity3d.com/560/Documentation/ScriptReference/String.html) this refers ta sequence of characters.
 - text this refers to the part of the TextMeshPro that will be use to show dialouge.
 - template_clone refers to the d_template that is duplicated.
 - Instantiate](https://docs.unity3d.com/6000.0/Documentation/Manual/instantiating-prefabs.html) this allows us to create a copy (prefab) of an object into unity.
